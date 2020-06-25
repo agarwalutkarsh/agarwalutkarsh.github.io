@@ -1,0 +1,129 @@
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background:url("fog.jpg") no-repeat center center/cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  font-family: 'Homemade Apple', cursive;
+
+
+}
+
+.intro{
+
+  font-family: 'Homemade Apple', cursive;
+  color: white;
+  font-size: 3.2em;
+  margin-top: 1.5em;
+  padding: 10px;
+
+}
+
+.foot{
+  color: white;
+  font-family: cursive;
+  font-size: 13px;
+}
+
+.refer
+{
+  color: #fff;
+}
+
+.refer:hover
+{
+  color: #dc407f;
+  
+}
+
+.text
+{
+  color: white;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: auto;
+  transform: scale(1);
+}
+
+
+.gradient-circle
+{
+  background-color: black;
+  filter: blur(8px);
+  height: 320px;
+  width: 320px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  z-index: -4;
+}
+
+.circle
+{
+  background-color: #3d4641;
+  border-radius: 50%;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+
+.container.grow
+{
+  animation: grow 3s linear forwards ;
+}
+
+.container.shrink
+{
+  animation: shrink 3s linear forwards ;
+}
+
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  from
+  {
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shrink{
+  from
+  {
+    transform: scale(1.2);
+  }
+  to
+  {
+    transform: scale(1);
+  }
+}
